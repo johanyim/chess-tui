@@ -8,9 +8,11 @@
 //storing history as FEN string
 //
 
-
-
+use chess_tui::board::Board;
 fn main() {
-    println!("Hello, world!");
+    println!("Invalid");
+    Board::build_from_fen("askdj/asdkjh".to_string());
+    println!("Correct");
+    Board::build_from_fen("rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1".to_string());
 }
 

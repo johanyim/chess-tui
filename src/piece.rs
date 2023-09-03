@@ -2,11 +2,11 @@ pub enum Unit {
     Pawn, Bishop, Knight, Rook, Queen, King,
 }
 
-
 pub enum Color {
     Black,
     White,
 }
+
 pub struct Piece {
     pub unit: Unit,
     //moves: Vec<Move>,
@@ -32,3 +32,5 @@ impl Piece {
         };
     }
 }
+
+
